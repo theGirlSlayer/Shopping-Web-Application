@@ -1,0 +1,73 @@
+ @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ }
+ <!-- Breadcrumb Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a asp-controller="Home" asp-action= "Index"><i class="fa fa-home"></i> Home</a>
+                        <span>Register</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Form Section Begin -->
+
+    <!-- Register Section Begin -->
+    <div class="register-login-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="register-form">
+                        <h2>Register</h2>
+                        <form asp-controller="User" asp-action="Register" method="POST">
+                            <div class="group-input">
+                                <label for="firstname">First name *</label>
+                                <input type="text" name="txtFirstName">
+                            </div>
+                            <div class="group-input">
+                                <label for="lastname">Last name *</label>
+                                <input type="text" name="txtLastName">
+                            </div>
+                            <div class="group-input">
+                                <label for="displayname">Display name *</label>
+                                <input type="text" name="txtDisplayName">
+                            </div>
+                            <div class="group-input">
+                                <label for="phonenumber">Phone number *</label>
+                                <input type="text" name="txtPhoneNumber">
+                            </div>
+                            <div class="group-input">
+                                <label for="email">Email address *</label>
+                                <input type="text" name="txtEmail">
+                            </div>
+                            <div class="group-input">
+                                <label for="address">Address *</label>
+                                <input type="text" name="txtAddress">
+                            </div>
+                            <div class="group-input">
+                                <label for="username">Username*</label>
+                                <input type="text" name="txtUsername">
+                            </div>
+                            <div class="group-input">
+                                <label for="pass">Password *</label>
+                                <input type="password" name="txtPassword">
+                            </div>
+                            <div class="group-input">
+                                <label for="con-pass">Confirm Password *</label>
+                                <input type="password" name="txtComfirmPassword">
+                            </div>
+                            <button type="submit" class="site-btn register-btn">REGISTER</button>
+                        </form>
+                        <div class="switch-login">
+                            <a asp-controller="User" asp-action="Login" class="or-login">Or Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Form Section End -->
